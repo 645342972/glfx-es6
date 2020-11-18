@@ -5,3 +5,4 @@ dist
 
 yarn-*.log
 yarn.lock
+.idea

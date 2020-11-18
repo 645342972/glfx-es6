@@ -127,7 +127,7 @@ export default {
   canvas() {
     var canvas = document.createElement('canvas');
     try {
-      store.set({gl: canvas.getContext('experimental-webgl', { premultipliedAlpha: false })});
+      store.set({gl: canvas.getContext('experimental-webgl', { premultipliedAlpha: false, preserveDrawingBuffer: true })});
     } catch (e) {
       store.set({gl: null});
     }
